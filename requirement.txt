@@ -1,0 +1,6 @@
+* login page functionality
+* sigup page functionality
+* reset password functionality
+* onboarding / profile personalisation
+* user profile page
+* setting
