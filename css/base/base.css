@@ -1,0 +1,28 @@
+/* fonts */
+@font-face {
+    font-family: 'Poppins-Semibold';
+    src: url('/assets/fonts/Poppins/Poppins-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('/assets/fonts/Poppins/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('/assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+
+:root {
+    --background-color: #0F1138;
+    --primary-color: #DFC865;
+    --secondary-color: #AA7A24;
+    --gray: #666666;
+    --white: #F5F5F5;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
