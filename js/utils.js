@@ -15,7 +15,7 @@ export class User {
     }
     
     login(username, password) {
-        if (username == this.username && password == this.password) {
+        if (username == this.userName && password == this.password) {
             this.login = true;
             location.href = '/home.html';
         }
