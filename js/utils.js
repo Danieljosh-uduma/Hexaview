@@ -6,24 +6,23 @@ export class User {
         this.email = email;
         this.password = password;
         this.phoneNumber = phoneNumber;
+        this.login = false;
     }
-    saveUser() {
+    signUp() {
         localStorage.setItem('username', this.userName);
         localStorage.setItem('email', this.email);
         localStorage.setItem('password', this.password);
         localStorage.setItem('phoneNumber', this.phoneNumber);
     }
-    
-    login(username, password) {
+    logIn(username, password) {
         if (username == this.userName && password == this.password) {
             this.login = true;
             location.href = '/home.html';
         }
         else {
-            return this.login
+            return this.logIn;    
         }
     }
-
     logout() {
         this.login = fasle;
         location.href = '/login.html'
