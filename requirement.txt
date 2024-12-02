@@ -4,3 +4,7 @@
 * onboarding / profile personalisation
 * user profile page
 * setting
+
+
+how to pull and push 
+

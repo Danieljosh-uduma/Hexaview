@@ -13,6 +13,7 @@
 }
 
 :root {
+    /* theme colors  */
     --background-color: #0F1138;
     --primary-color: #DFC865;
     --secondary-color: #AA7A24;
@@ -25,4 +26,5 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    list-style-type: none;
 }

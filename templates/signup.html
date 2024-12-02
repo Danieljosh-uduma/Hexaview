@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up | Hexaview</title>
+    <link rel="stylesheet" href="/css/pages/signup.css">
+    <script src="/js/app.js" type="module" defer></script>
+    <script type="module" src="/js/test.js"></script>
+</head>
+<body>
+
+    <!-- main  -->
+    <main>
+
+        <!-- Hexaview image side -->
+        <section class="main__section" id="hero">
+            <div class="overlay"></div>
+            <div class="main__section--child">
+                <h1>Hexaview</h1>
+                <h2>Discover your next  favourite movie with Hexaview, where magic match convenience</h2>
+                <p>Hexaview tailors your movie journey making it effortless to find and enjoy movie.</p>
+                <a href="#aside" class="btn-signup1" id="btn-signup" type="submit">Sign up</a>
+            </div>
+        </section>
+
+
+        <!-- user registration form  -->
+        <aside class="main__aside" id="aside">
+            <h2>Hexaview</h2>
+            <h3>Create Your Account</h3>
+
+            <form action="" id="form1">
+                <div>
+                    <input type="text" name="username" id="username" placeholder="Username" required>
+                </div>
+                <p id="msg"></p>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <input type="tel" name="phone-number" id="phone-number" placeholder="Phone Number" required>
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Create password" required>
+                </div>
+                <div>
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="confirm password" required>
+                </div>
+                <div class="privacy">
+                    <input type="checkbox" name="privacy" id="privacy">
+                    <label for="privacy">I agree with <a href="">privacy</a> and <a href="">policy</a> </label>
+                </div>
+                <button class="btn-signup" type="submit" id="btn-submit" disabled>Sign up</button>
+            </form>
+
+            <!-- social login  -->
+            <section class="social__signup">
+                <h3>Or sign up with</h3>
+                <ul>
+                    <li>
+                        <a href=""><img class="social" src="/assets/icons/Google icon.png" alt="Google icon"></a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="social" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30 15.0001C30 6.71582 23.2843 9.34601e-05 15 9.34601e-05C6.71572 9.34601e-05 0 6.71582 0 15.0001C0 22.487 5.48528 28.6926 12.6562 29.8179V19.336H8.84766V15.0001H12.6562V11.6954C12.6562 7.93603 14.8956 5.85947 18.322 5.85947C19.9631 5.85947 21.6797 6.15244 21.6797 6.15244V9.84384H19.7882C17.9249 9.84384 17.3438 11.0001 17.3438 12.1863V15.0001H21.5039L20.8389 19.336H17.3438V29.8179C24.5147 28.6926 30 22.487 30 15.0001Z" fill="#0F1138"/>
+                                <path d="M20.8389 19.3359L21.5039 15H17.3437V12.1862C17.3437 11 17.9249 9.84375 19.7882 9.84375H21.6797V6.15234C21.6797 6.15234 19.9631 5.85937 18.322 5.85937C14.8956 5.85937 12.6562 7.93594 12.6562 11.6953V15H8.84766V19.3359H12.6562V29.8178C13.4199 29.9376 14.2027 30 15 30C15.7973 30 16.5801 29.9376 17.3437 29.8178V19.3359H20.8389Z" fill="#F5F5F5"/>
+                            </svg>
+                        </a>                            
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="social" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.0602 10.2353C26.6024 11.4706 25.0843 13.5882 25.0843 15.9412C25.0843 18.5882 27.0361 21 30 22C29.4217 23.5294 28.5542 24.9412 27.4699 26.2353C25.8795 28.0588 24.2169 29.9412 21.759 29.9412C19.3012 29.9412 18.5783 28.7647 15.6867 28.7647C12.8675 28.7647 11.8554 30 9.54217 30C7.22892 30 5.63855 28.2941 3.83133 26.1765C1.44578 23.2353 0.0722892 19.8235 0 16.2353C0 10.4118 4.62651 7.29412 9.25301 7.29412C11.7108 7.29412 13.7349 8.58824 15.253 8.58824C16.6988 8.58824 19.012 7.23529 21.759 7.23529C24.6506 7.17647 27.3976 8.29412 29.0602 10.2353ZM20.4578 4.76471C21.6867 3.58824 22.3373 2.11765 22.4096 0.588235C22.4096 0.411765 22.4096 0.176471 22.3373 0C20.241 0.176471 18.2892 1 16.9157 2.29412C15.6867 3.41176 14.9639 4.82353 14.8916 6.35294C14.8916 6.52941 14.8916 6.70588 14.9639 6.88235C15.1084 6.88235 15.3253 6.94118 15.4699 6.94118C17.4217 6.82353 19.2289 6 20.4578 4.76471Z" fill="#F5F5F5"/>
+                            </svg>
+                        </a>                            
+                    </li>
+                </ul>
+
+                <div class="login">
+                    <p>Already have an account?</p>
+                    <a href="">Sign in</a>
+                </div>
+            </section>
+        </aside>
+    </main>
+</body>
+</html>

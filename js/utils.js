@@ -8,11 +8,8 @@ export class User {
         this.phoneNumber = phoneNumber;
         this.login = false;
     }
-    signUp() {
-        localStorage.setItem('username', this.userName);
-        localStorage.setItem('email', this.email);
-        localStorage.setItem('password', this.password);
-        localStorage.setItem('phoneNumber', this.phoneNumber);
+    signUp(username, user) {
+        localStorage.setItem(username, JSON.stringify(user));
     }
     logIn(username, password) {
         if (username == this.userName && password == this.password) {
@@ -32,8 +29,21 @@ export class User {
 // messages
 export let messages = [
     'No spaces allowed, use underscore instead',
-    'incorrect password or username',
-    'invalid User',
+    'incorrect password or email',
+    'invalid email address',
     'username must start with @ character',
     'password must be up to 8 characters',
+    'This username is available',
+    'This username is not available'
 ]
+
+// get all users from db
+export let allUsers = {};
+export let allUserNames = [];
+
+for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    const value = localStorage.getItem(key);
+    allUsers[key] = value;
+    allUserNames[i] = key;
+}
