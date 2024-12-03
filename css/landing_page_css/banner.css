@@ -1,7 +1,7 @@
 .banner {
     width: 100%;
     /* height: fit-content; */
-    background: rgba(0, 0, 0, 0.4) url(../../assets/img/landing_page_img/hero_backround_img.png ) no-repeat center;
+    /* background: rgba(0, 0, 0, 0.4) url(../../assets/img/landing_page_img/hero_backround_img.png ) no-repeat center; */
     /* background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) url(../../assets/img/landing_page_img/hero_backround_img.png ); */
     background-size: cover;
     filter: brightness(0.2);
@@ -55,8 +55,8 @@
         border-radius: 5px;
         border: none;
         width: 60%;
-        height: 7vh;
-        padding: 1vh 2vw;
+        height: 50px;
+        padding: 10px 20px;
         text-align: left;
     }
 
@@ -88,6 +88,8 @@ hr {
 @media only screen and (max-width:740px) {
     #ham {
         display: flex;
+        width:  50px;
+        cursor: pointer;
     }
 
     .header-inner {
