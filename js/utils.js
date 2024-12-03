@@ -8,11 +8,12 @@ export class User {
         this.phoneNumber = phoneNumber;
         this.login = false;
     }
+
     signUp(user) {
         localStorage.setItem(this.userName, JSON.stringify(user));
-        console.log('saved new user')
         location.href = './login.html'
     }
+
     logIn(username, password) {
         if (username == this.userName && password == this.password) {
             this.login = true;
@@ -22,6 +23,7 @@ export class User {
             return this.logIn;    
         }
     }
+
     logout() {
         this.login = fasle;
         location.href = '/login.html'
@@ -51,15 +53,13 @@ for (let i = 0; i < localStorage.length; i++) {
 }
 
 export function checkPassword(password1, password2) {
-    if (password1 == password2) {
-        console.log('password saved')
+    if (password1.length < 8) {
+        return 2;
+    }
+    else if (password1 == password2) {
         return 0;
     }
     else {
-        console.log('password must be the same');
         return 1;
     }
-{
-
-}
 }
