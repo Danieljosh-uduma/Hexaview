@@ -1,4 +1,4 @@
-import { User, messages, allUsers, allUserNames } from './utils.js';
+import { User, messages, allUsers, allUserNames, checkPassword } from './utils.js';
 
 
 // sign up functionality
@@ -32,16 +32,36 @@ username.addEventListener('input', () => {
 
 // sign up functionality 
 let SignUpForm = document.getElementById('form1')
-let inputs = SignUpForm.elements
+let inputs = SignUpForm.elements;
+let msg2 = document.getElementById('msg2');
 
 SignUpForm.addEventListener('submit', (event) => {
     console.log('default prevented')
-    let username = inputs['username'];
-    let email = inputs['email'];
-    let number = inputs['phone-number'];
-    let password = inputs['password'];
-    console.log(SignUpForm.elements['username'].value)
-    event.preventDefault()
+    let username = inputs['username'].value;
+    let email = inputs['email'].value;
+    let number = inputs['phone-number'].value;
+    let password = inputs['password'].value;
+    let confirmPassword = inputs['confirm-password'].value;
+    console.log(username,email, number, password, confirmPassword);
+    event.preventDefault();
+    let mainPassword = checkPassword(password, confirmPassword);
+    if (mainPassword == 0) {
+        let newUser = new User(username, email, number, password);
+        msg2.innerText = '';
+        newUser.signUp(newUser);
+    }
+    else {
+        msg2.innerText = 'passwords must be the same';
+  must   }
 })
 
-// console.log(SignUpForm.elements['username'])
+//m console.log(SignUpForm.elements['username'])
+
+
+
+
+
+
+
+
+
