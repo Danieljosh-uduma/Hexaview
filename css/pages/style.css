@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: poppins;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    position: relative;
+    background-color: #0f1138;
+    width: 100%;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+}
+
+article ul {
+    display: flex;
+    gap:1vw;
+}
+
+/* main */
+main {
+    section {
+        width: 85%;
+        margin: auto;
+        min-height: 500px;
+        padding: 50px 0;
+    }
+}
+
+/* categories section contains: trending, popular, recently added */
+.categories {
+    .categories-title {
+        li {
+            width: 250px;
+        }
+    }
+
+    .categories-img {
+        margin-top: 2vh;
+        width: 250px;
+
+        img {
+            height: 375px;
+        }
+    }
+}
+
+/* why choose Hexaview section */
+.choose {
+    h1 {
+        text-align: center;
+    }
+
+    .choose-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5vw 0;
+
+        .choose-container-innerbox {
+            width: 280px;
+            height: 300px;
+            border: 1px solid #aa7a24;
+            border-radius: 10px;
+            padding: 1vw;
+            margin: auto;
+        }
+    }
+}
+
+/* genres */
+.genre {
+    img {
+        width: 300px;
+        height: 320px;
+    }
+}
+
+.faq-container {
+    display: flex;
+    flex-direction:  column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content:center;
+    gap: 5vh 0;
+
+    .faq-innerbox {
+        /* width: 500px; */
+        border: 1px solid #aa7a24;
+        border-radius: 10px;
+        padding: 1vw;
+    }
+}
