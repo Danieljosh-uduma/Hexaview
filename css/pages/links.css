@@ -1,0 +1,33 @@
+button {
+    cursor: pointer;
+}
+.color-button {
+    background-color: #aa7a24;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 7px;
+    a {
+        color: white;
+    }
+}
+
+.color-button:hover {
+    background-color: white;
+
+    a {
+        color: #aa7a24;
+    }
+}
+
+.color-button:active {
+    a {
+        color: #0f1138;
+    }
+}
+
+/* a:hover{
+    color: #aa7a24;
+} */
+a:hover{
+    transform: scale(1.2, 2);
+}

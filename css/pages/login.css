@@ -1,0 +1,238 @@
+/* General reset */
+:root {
+    --primary-font-family: "Poppins", sans-serif;
+    --primary-bg-color: rgb(15, 17, 56);
+    --primary-color: rgb(245, 245, 245);
+    --secondary-font-family: "Inter", sans-serif;
+    --secondary-color: rgb(170, 122, 36);
+    --border-color: rgb(170, 122, 36);
+    --font-weight: 300;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-size-s: 16px;
+    --font-size-med: 20px;
+    --font-size-l: 24px;
+    --font-size-xl: 30px;
+    --font-size-xxl: 48px;
+  }
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    font-family: var(--primary-font-family);
+    background-color: var(--primary-bg-color);
+    height: 124vh;
+  }
+  .content-container {
+    display: flex;
+    justify-content: space-around;
+    width: 1440px;
+    margin: 0 auto;
+    height: auto;
+  }
+  .heading {
+    max-width: 50%;
+    position: relative;
+    padding: 2rem;
+    overflow: hidden;
+  }
+  .heading p {
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight);
+    line-height: 33.6px;
+    max-width: 445px;
+    margin: 0 auto;
+  }
+  p:last-of-type {
+    margin-block-start: 20px;
+  }
+  .form-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    overflow: hidden;
+  }
+  .form-container h1 {
+    font-family: var(--secondary-font-family);
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--secondary-color);
+    line-height: 57.6px;
+    margin-block: 3rem;
+  }
+  .form-container h2 {
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight);
+    line-height: 33.6px;
+    text-align: center;
+    margin-block-end: 3rem;
+  }
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-color);
+  }
+  #msg {
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: -10px;
+    color: #666666;
+  }
+  #email,
+  #password,
+  form p {
+    margin-bottom: 15px;
+    font-family: var(--secondary-font-family);
+    font-size: var(--font-size-med);
+    font-weight: var(--font-weight-semibold);
+    line-height: 28px;
+    color: var(--primary-color);
+  }
+  #email,
+  #password {
+    width: 374px;
+    padding: 10px 19px;
+    background-color: var(--primary-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+  }
+  
+  #reminder {
+    width: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+  }
+  input::placeholder {
+    color: var(--primary-color);
+  }
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .options label,
+  .options a {
+    font-family: var(--secondary-font-family);
+    font-size: var(--font-size-s);
+    font-weight: var(--font-size-med);
+    line-height: 25.6px;
+    text-align: center;
+  }
+  .options label {
+    color: rgb(124, 124, 124);
+  }
+  .options a {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  button {
+    font-family: var(--secondary-font-family);
+    font-size: var(--font-size-med);
+    font-weight: var(--font-size-med);
+    line-height: 28px;
+    text-align: center;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 25px;
+    margin-block: 3.5rem;
+  }
+  footer {
+    width: 100%;
+  }
+  footer p {
+    text-align: center;
+    margin-block: 15px;
+  }
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+  .fa-brands {
+    width: 30px;
+    display: block;
+    color: var(--primary-color);
+    margin: 0 auto;
+  }
+  .sign-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1024px) {
+    .content-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .heading,
+    .form-container {
+      width: 100%;
+    }
+  
+    .heading p,
+    .form-container h1,
+    .form-container h2 {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .content-container {
+      padding: 1.5rem;
+    }
+  
+    .heading,
+    .form-container {
+      padding: 2rem;
+    }
+  
+    #email,
+    #password {
+      max-width: 100%;
+    }
+  
+    button {
+      font-size: var(--font-size-s);
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-container h1 {
+      font-size: var(--font-size-xl);
+    }
+  
+    .form-container h2 {
+      font-size: var(--font-size-med);
+    }
+  
+    footer p {
+      font-size: var(--font-size-s);
+    }
+  
+    .social-icons {
+      gap: 15px;
+    }
+  
+    .fa-brands {
+      width: 25px;
+    }
+  }
