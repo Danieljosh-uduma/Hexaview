@@ -1,0 +1,126 @@
+/* General reset */
+:root {
+  --primary-bg-color: rgb(15, 17, 56);
+  --primary-color: rgb(245, 245, 245);
+  --button-color: rgb(208, 208, 208);
+  --font-weight-semibold: 600;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-color);
+  line-height: 1.2;
+}
+.watch-container{
+    padding-top: 20px;
+    max-width: 1440px;
+  margin: 2.5rem auto;}
+h1 {
+  font-size: 4rem;
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+  margin-block: 20px;
+}
+.users-container {max-width: 100%;
+  margin: 0 auto;
+   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 56px;
+}
+.user {
+  width: 296px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.user img {
+  display: block;
+  margin: 0 auto;
+  width: 286px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+figcaption {
+  font-size: 2rem;
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+  color: rgb(189, 189, 189);
+}
+button {
+  display: block;
+  margin: 4rem auto 0;
+  background-color: transparent;
+  color: var(--button-color);
+  width: 427px;
+  padding: 20px 45px;
+  border-radius: 13px;
+  border: 2px solid var(--button-color);
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--button-color);
+  color: var(--primary-bg-color);
+  transition: all 150ms ease-in-out;
+}
+@media (max-width: 1024px) {
+ .watch-container {
+margin-block: 5rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .users-container {
+    width: 90%;;
+  }
+  .user img{
+    width: 100%;
+     }
+     figcaption{
+      font-size: 1.5rem;
+     }
+}
+@media (max-width: 768px) {
+  .watch-container {
+    margin-block: 30px;
+    padding-block: 10px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .users-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .watch-container {
+    margin-block: 10px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .users-container {
+ width: 100%;
+    gap: 30px;
+  }
+   figcaption {
+    font-size: 1.2rem;
+  }
+  button {
+    width: 70%;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+  }
+}
