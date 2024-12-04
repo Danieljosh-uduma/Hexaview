@@ -36,6 +36,8 @@
           crossorigin="anonymous"
           referrerpolicy="no-referrer"
         />
+
+        <script type="module" src="/js/signup.js"></script>
       </head>
 
       <body>
@@ -52,7 +54,8 @@
             <div class="form-container">
               <h1>Hexaview</h1>
               <h2>Login</h2>
-              <form action="/submit.html" method="get" class="request-form">
+              <p id="msg"></p>
+              <form action="" class="request-form" id="form">
                 <label for="email"></label>
                 <input
                   type="email"
@@ -76,7 +79,7 @@
                   >
                   <a href="./password_reset1.html">Forgot password?</a>
                 </div>
-                <button type="submit">Log In</button>
+                <button type="submit" id="btn">Log In</button>
               </form>
               <footer>
                 <p>Or continue with</p>
@@ -97,7 +100,7 @@
                 </div>
                 <p>
                   Don't have an account?
-                  <a href="#" target="_blank" class="sign-link">Sign up</a>
+                  <a href="./signup.html" target="_blank" class="sign-link">Sign up</a>
                 </p>
               </footer>
             </div>

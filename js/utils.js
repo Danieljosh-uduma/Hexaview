@@ -14,7 +14,7 @@ export class User {
         location.href = './login.html'
     }
 
-    logIn(username, password) {
+    logIn(login, ) {
         if (username == this.userName && password == this.password) {
             this.login = true;
             location.href = '/home.html';
@@ -44,6 +44,7 @@ export let messages = [
 // get all users from db
 export let allUsers = {};
 export let allUserNames = [];
+export let allEmails = [];
 
 for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
@@ -51,7 +52,14 @@ for (let i = 0; i < localStorage.length; i++) {
     allUsers[key] = value;
     allUserNames[i] = key;
 }
-
+for ( let i = 0; i < allUserNames.length; i++) {
+    // let know = JSON.parse(allUsers[allUserNames[i]]);
+    // allEmails[i] = know.email
+    if (allUsers[allUserNames[i]] != 'INFO'){
+        let know = JSON.parse(allUsers[allUserNames[i]]);
+        allEmails[i] = know.email
+    }
+}
 export function checkPassword(password1, password2) {
     if (password1.length < 8) {
         return 2;
@@ -63,3 +71,18 @@ export function checkPassword(password1, password2) {
         return 1;
     }
 }
+export function findUser(email) {
+    for (let i = 0; i < allUserNames.length; i++) {
+        if (allUsers[allUserNames[i]] != 'INFO') {
+            let know = JSON.parse(allUsers[allUserNames[i]]);
+            if (know.email == email){
+            return allUserNames[i];
+        }
+        }
+    }
+    return 1;
+}
+export function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  

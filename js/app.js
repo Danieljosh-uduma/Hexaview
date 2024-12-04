@@ -1,4 +1,4 @@
-import { User, messages, allUsers, allUserNames, checkPassword } from './utils.js';
+import { User, messages, allUsers, allUserNames, checkPassword, allEmails } from './utils.js';
 
 
 // sign up functionality
@@ -72,14 +72,3 @@ SignUpForm.addEventListener('submit', (event) => {
         msg2.innerText = 'Password must be more or 8 characters';
     }
 })
-
-
-
-
-
-
-
-
-
-
-
