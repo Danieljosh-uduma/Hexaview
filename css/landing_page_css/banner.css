@@ -1,20 +1,24 @@
-.banner {
+.banner{
     width: 100%;
     height: fit-content;
-    background: rgba(0, 0, 0, 0.1) url(../../assets/img/landing_page_img/hero_backround_img.png ) no-repeat center;
+    opacity: 0.5;
+    background: rgba(207, 157, 107, 0.212) url(../../assets/img/landing_page_img/hero_backround_img.png ) no-repeat center;
     background-size: cover;
-    filter: brightness(0.2);
+    /* filter: brightness(0.2); */
     position: relative;
 
     *,
     a,
-    p {
+    p ,input{position: relative;
+        z-index: 2;
         color: white;
     }
 }
 
 #ham {
     display: none;
+    width:  50px;
+    cursor: pointer;
 }
 
 .header-inner {
@@ -45,9 +49,9 @@
 
 .hero {
     position: relative;
-    z-index:1 ;
-    /* background-color: aqua; */
+    z-index:6 ;
     margin: auto;
+    opacity: 1;
 
     section {
         width: 80%;
@@ -93,8 +97,6 @@ hr {
 @media only screen and (max-width:740px) {
     #ham {
         display: flex;
-        width:  50px;
-        cursor: pointer;
     }
 
     .header-inner {
