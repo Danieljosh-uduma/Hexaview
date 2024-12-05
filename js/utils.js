@@ -55,7 +55,7 @@ for (let i = 0; i < localStorage.length; i++) {
 for ( let i = 0; i < allUserNames.length; i++) {
     // let know = JSON.parse(allUsers[allUserNames[i]]);
     // allEmails[i] = know.email
-    if (allUsers[allUserNames[i]] != 'INFO' && allUserNames[i] != 'return'){
+    if (allUsers[allUserNames[i]] != 'INFO' && allUsers[allUserNames[i]] != 'return'){
         let know = JSON.parse(allUsers[allUserNames[i]]);
         allEmails[i] = know.email
     }
@@ -73,7 +73,7 @@ export function checkPassword(password1, password2) {
 }
 export function findUser(email) {
     for (let i = 0; i < allUserNames.length; i++) {
-        if (allUsers[allUserNames[i]] != 'INFO') {
+        if (allUsers[allUserNames[i]] != 'INFO' && allUsers[allUserNames[i]] != 'return') {
             let know = JSON.parse(allUsers[allUserNames[i]]);
             if (know.email == email){
             return allUserNames[i];
