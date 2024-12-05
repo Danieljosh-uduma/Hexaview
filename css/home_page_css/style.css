@@ -4,7 +4,10 @@
     list-style: none;
     text-decoration: none;
     color: white;
+    font-family: poppins;
 }
-body{
-background-color: #aa7a24;
+body {
+    position: relative;
+    background-color: #0f1138;
+    width: 100%;
 }

@@ -23,7 +23,11 @@ body {
 
 article ul {
     display: flex;
-    gap:1vw;
+    gap: 1vw;
+    span{
+        margin-left: 5px;
+    }
+   
 }
 
 /* main */
@@ -31,7 +35,6 @@ main {
     section {
         width: 85%;
         margin: auto;
-        min-height: 500px;
         padding: 50px 0;
     }
 }
