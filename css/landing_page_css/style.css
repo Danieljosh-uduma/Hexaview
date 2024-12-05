@@ -9,7 +9,7 @@
 }
 
 body {
-    position: relative;
+    position: absolute;
     background-color: #0f1138;
     width: 100%;
 }
@@ -32,6 +32,7 @@ article ul {
 
 /* main */
 main {
+    position: relative;
     section {
         width: 85%;
         margin: auto;
