@@ -51,6 +51,18 @@ section {
 
 .heading {
   flex: 2;
+  height: 100vh;
+}
+.bg-img {
+  display: block;
+  height: 100vh;
+  width: 50%;
+  background-image: url(/assets/images/sign_up/login.png);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
 }
 
 .heading p {
@@ -69,6 +81,8 @@ p:last-of-type {
   flex: 2;
   display: flex;
   flex-direction: column;
+  height: 100vh;
+
 }
 
 .form-container h1 {
@@ -208,7 +222,9 @@ footer p {
   section {
     flex-direction: column;
   }
-
+  .bg-img {
+    display: none;
+  }
   .form-container h1 {
     font-size: var(--font-size-xl);
     padding-block-end: 1.5rem;
