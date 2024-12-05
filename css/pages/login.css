@@ -1,4 +1,5 @@
 /* General reset */
+
 :root {
   --primary-font-family: "Poppins", sans-serif;
   --primary-bg-color: rgb(15, 17, 56);
@@ -30,7 +31,13 @@ body {
   font-family: var(--primary-font-family);
   background-color: var(--primary-bg-color);
 }
-
+#msg {
+  color: #666666;
+  padding-left: 20px;
+  margin: -20px 0 20px 0;
+  text-align: center;
+  font-size: 0.8rem;
+}
 section {
   display: flex;
   justify-content: space-between;
@@ -105,6 +112,7 @@ form p {
   background-color: var(--primary-bg-color);
   border: 1px solid var(--border-color);
   border-radius: 12px;
+  color: var(--primary-color);
 }
 
 #reminder {
