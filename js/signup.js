@@ -22,7 +22,9 @@ form.addEventListener('submit', (event) => {
             msg.innerText = '';
 
             user.login = true;
-            location.href = './home.html'
+            
+            localStorage.setItem(user.userName, JSON.stringify(user));
+            location.href = './profile.html'
         }
     }
 })
