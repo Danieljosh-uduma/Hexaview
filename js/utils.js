@@ -55,7 +55,7 @@ for (let i = 0; i < localStorage.length; i++) {
 for ( let i = 0; i < allUserNames.length; i++) {
     // let know = JSON.parse(allUsers[allUserNames[i]]);
     // allEmails[i] = know.email
-    if (allUsers[allUserNames[i]] != 'INFO'){
+    if (allUsers[allUserNames[i]] != 'INFO' && allUserNames[i] != 'return'){
         let know = JSON.parse(allUsers[allUserNames[i]]);
         allEmails[i] = know.email
     }
