@@ -59,6 +59,7 @@ SignUpForm.addEventListener('submit', (event) => {
     let password = inputs['password'].value;
     let confirmPassword = inputs['confirm-password'].value;
 
+    // prevnt default form submission
     event.preventDefault();
 
     let mainPassword = checkPassword(password, confirmPassword);
