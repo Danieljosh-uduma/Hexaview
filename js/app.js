@@ -31,13 +31,15 @@ username.addEventListener('input', () => {
 })
 email.addEventListener('input', () => {
     for ( let i = 0; i < allUserNames.length; i++) {
-        let know = JSON.parse(allUsers[allUserNames[i]]);
-        if (email.value == know.email) {
-            msg3.innerText = 'email must be unique';
-            return 0;
-        }
-        else {
-            msg3.innerText = '';
+        if (allUsers[allUserNames[i]] != 'INFO' && allUsers[allUserNames[i]] != 'return') {
+            let know = JSON.parse(allUsers[allUserNames[i]]);
+            if (email.value == know.email) {
+                msg3.innerText = 'email must be unique';
+                return 0;
+            }
+            else {
+                msg3.innerText = '';
+            }
         }
     }
     
