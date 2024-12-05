@@ -5,6 +5,7 @@ let password = document.getElementById('password');
 let passwordConfirm = document.getElementById('confirm-password');
 let msg = document.getElementById('msg2');
 let msg2 = document.getElementById('msg');
+let msg3 = document.getElementById('msg3')
 let btnEmail = document.getElementById('btn-submit-email');
 let firstForm = document.getElementById('form1');
 let secondForm = document.getElementById('form2');

@@ -13,7 +13,7 @@ form.addEventListener('submit', (event) => {
     }
     else {
         msg.innerText = '';
-
+        
         let user = JSON.parse(allUsers[username]);
         if (user.password != password.value) {
             msg.innerText = 'incorrect email or password';
