@@ -1,16 +1,29 @@
 .banner {
+    display: grid;
     width: 100%;
     /* height: fit-content; */
-    /* background: rgba(0, 0, 0, 0.4) url(../../assets/img/landing_page_img/hero_backround_img.png ) no-repeat center; */
+    background: rgba(0, 0, 0, 0.4) url(/assets/images/landing_page_img/hero_backround_img.png) no-repeat center;
     /* background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) url(../../assets/img/landing_page_img/hero_backround_img.png ); */
     background-size: cover;
-    filter: brightness(0.2);
+    /* filter: brightness(0.2); */
 
     *,
     a,
     p {
         color: white;
     }
+}
+.banner-overlay {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    background-color: #0F1138;
+    opacity: 0.8;
+    z-index: 0;
+}
+.main-div {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    z-index: 10;
 }
 
 #ham {
