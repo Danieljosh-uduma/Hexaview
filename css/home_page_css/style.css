@@ -29,7 +29,7 @@ main{
 }
 .new-bio{
     background: url(../../assets/img/home_page_img/knight.png) no-repeat;
-    /* width: 690px; */
+    max-width: 690px;
     height: 400px;
     margin: auto;
     padding: 2vw;
@@ -44,7 +44,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20vw 2vw;
+    gap: 20vw 0vw;
 }
 .movie-box{
     width: 250px;
