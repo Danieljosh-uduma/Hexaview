@@ -1,8 +1,8 @@
-import { allUsers, allUserNames, checkPassword, allEmails } from './utils.js';
+import { allUsers, allUserNames } from './utils.js';
 
 let username = document.getElementById('username');
 
-let activeUser = () => {
+export let activeUser = () => {
     for (let i = 0; i < allUserNames.length; i++) {
         if (allUsers[allUserNames[i]] != 'INFO' && allUsers[allUserNames[i]] != 'return'){
             let user = JSON.parse(allUsers[allUserNames[i]]);
@@ -10,9 +10,7 @@ let activeUser = () => {
                 return user;
             }
         }
-        
-        
-        
+        return 1;
     }
 }
 
@@ -25,7 +23,7 @@ const addProfile = document.getElementById('add-user')
 console.log(userProfiles)
 userProfiles.forEach(element => {
     element.addEventListener('click', () => {
-        location.href = './home.html'
+        location.href = './subscription.html'
     })
 });
 
