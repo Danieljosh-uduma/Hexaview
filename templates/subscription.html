@@ -1,14 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subscription | Hexaview</title>
-    <link rel="stylesheet" href="/css/pages/signup.css">
-    <link rel="stylesheet" href="/css/pages/subscription.css" type="text/tailwindcss">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Plans</title>
+  <link rel="stylesheet" href="/css/pages/suscriptionpage.css">
 </head>
 <body>
-    
+  <div class="pricing-container">
+    <div class="flex">
+      <h1>We've got a plan <br> that's <span class="highlight">perfect</span> for you</h1>
+      <p>Get 10% off when you subscribe from <br> India & the U.S</p>
+    </div>
+    <div class="billing-toggle">
+      <button class="active">Monthly Billing</button>
+      <button>Annual Billing</button>
+    </div>
+
+    <div class="plans">
+      <!-- Basic Plan -->
+      <div class="plan basic-plan">
+        <h2>Basic Plan</h2>
+        <p class="price">$10 <span>per user<br>per month</span></p>
+        <p>Basic Features for up to 2 Users</p>
+        <button class="get-started">Get Started</button>
+        <button class="more-info">Chat for More Info</button>
+        <hr>
+        <ul class="features">
+          <p>Features</p>
+          <li>Access to watch on your mobile screen</li>
+          <li>Not more than 2 Users at a time</li>
+          <li>HD Movies with low data consumption</li>
+          <li>Progress Saved Service</li>
+        </ul>
+      </div>
+
+      <!-- Standard Plan -->
+      <div class="plan standard-plan">
+        <h2>Standard Plan</h2>
+        <p class="price">$14 <span>per user<br>per month</span></p>
+        <p>Standard Features for up to 3 Users</p>
+        <button class="get-started">Get Started</button>
+        <button class="more-info">Chat for More Info</button>
+        <hr>
+        <ul class="features">
+          <p>Features</p>
+          <p class="special">Everything in our HX-Basic Plan</p>
+          <li>Access to watch on mobile screen & PC</li>
+          <li>Not more than 3 Users at a time</li>
+          <li>Full HD Movies with low data consumption</li>
+          <li>Progress Saved Service</li>
+        </ul>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="plan premium-plan">
+        <h2>Premium Plan</h2>
+        <p class="price">$17 <span>per user<br>per month</span></p>
+        <p>Premium Features for 4 users</p>
+        <button class="get-started">Get Started</button>
+        <button class="more-info">Chat for More Info</button>
+        <hr>
+        <ul class="features">
+          <p>Features</p>
+          <p class="special">Everything in our HX-Standard Plan</p>
+          <li>Access to watch on your mobile screen, PCs & TV Screens</li>
+          <li>Not more than 4 Users at a time</li>
+          <li>Ultra Movies with low data consumption</li>
+          <li>Progress Saved Service</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

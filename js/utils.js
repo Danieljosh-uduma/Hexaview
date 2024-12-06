@@ -7,6 +7,7 @@ export class User {
         this.password = password;
         this.phoneNumber = phoneNumber;
         this.login = false;
+        this.paid = false;
     }
 
     signUp(user) {
