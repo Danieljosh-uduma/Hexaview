@@ -186,7 +186,7 @@ footer p {
   section {
     max-width: 100%;
   }
-  .heading p{
+  .heading p {
     font-size: var(--font-size-med);
     width: 300px;
     gap: 15px;
