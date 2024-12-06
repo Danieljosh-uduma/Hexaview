@@ -1,13 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     color: white;
-    font-family: poppins;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+    padding: 3px 10px;
+    border-radius: 5px;
 }
 body {
     position: relative;
     background-color: #0f1138;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; 
+    min-height: 100vh;
+    width: 100%;
+}
+.new-bio{
+    background: url(../../assets/img/home_page_img/knight.png);
+    width: 690px;
+    height: 400px;
+    margin: auto;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    button{
+        width: fit-content;
+    }
+}
+.movie-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.movie-box{
+    width: 250px;
+    img{
+        height: 390px;
+    }
+}
+main{
+    padding: 1vw;
+    border-right:1px solid white;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        grid-template-columns: auto; 
+    }
 }

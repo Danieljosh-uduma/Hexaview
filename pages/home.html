@@ -6,38 +6,213 @@
     <link rel="stylesheet" href="../css/home_page_css/style.css">
     <link rel="stylesheet" href="../css/home_page_css/asideleft.css">
     <link rel="stylesheet" href="../css/home_page_css/asideright.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Home</title>
 </head>
 
 <body>
     <aside class="aside-left">
-        <h1>Hexaview</h1>
+        <div>
+            <h1 class="text-[#aa7a24] text-3xl">Hexaview</h1>
+        </div>
         <div class="aside-left-inner">
-            <ul>
-               <div>
-                <h2>Browse</h2>
-               </div>
-               <div>
-                <h2></h2>
-               </div>
-               <div>
-                <h2></h2>
-               </div>
-               <div>
-                <h2></h2>
-               </div>
-               <div>
-                <h2></h2>
-               </div>
-               <div>
-                <h2></h2>
-               </div>
-            </ul>
+            <section class="aside-left-top">
+                <button class="bg-[#dfc865]"><a href="" class="text-[#aa7a24]">
+                        <i class="fa-solid fa-house text-[#aa7a24]"></i>
+                        Home
+                    </a></button>
+                <ul>
+                    <div>
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h4>Browse Genres</h4>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-heart"></i>
+                        <h4>favorites</h4>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-download"></i>
+                        <h4>Downloads</h4>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-user-group"></i>
+                        <h4>Watch Party</h4>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <h4>History</h4>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-wifi"></i>
+                        <h4>Wifi</h4>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h4>Language</h4>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <h4>Subscription</h4>
+                    </div>
+                </ul>
+            </section>
+            <section class="aside-left-bottom">
+                <ul>
+                    <div>
+                        <i class="fa-solid fa-gear"></i>
+                        <h4>Settings</h4>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <h4>Log Out</h4>
+                    </div>
+                </ul>
+            </section>
         </div>
     </aside>
-    <main></main>
+
+    <!-- main -->
+    <main>
+        <section class="new">
+            <button class="bg-[#dfc865] ml-14"><a href="" class="text-[#aa7a24]">New</a></button>
+            <br>
+            <br>
+            <div class="new-bio">
+                <h4>THE DARK KNIGHT</h4>
+                <P>Batman has a new foe, the Joker, who is an accomplished criminal hell-bent on decimating Gotham City
+                </P>
+                <BUtton class="bg-[#aa7a24]"><a href="">
+                        Watch
+                    </a></BUtton>
+            </div>
+        </section>
+        <br>
+        <section class="trending">
+            <h1 class="text-3xl my-6">Trending Now</h1>
+            <div class="movie-container">
+                <div class="movie-box">
+                    <div>
+                        <img src="../assets/img/home_page_img/xfast.png" alt="xfast" width="100%"></div>
+                    <div>
+                        <h4 class="font-bold">X Fast</h4>
+                        <p>Drama, Thriller</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="movie-box">
+                    <div><img src="../assets/img/home_page_img/hoseman.png" alt="xfast" width="100%"></div>
+                    <div>
+                        <h4 class="font-bold">Homesman</h4>
+                        <p>Romance, Adventure</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="movie-box">
+                    <div><img src="../assets/img/home_page_img/dry.png" alt="xfast" width="100%"></div>
+                    <div>
+                        <h4 class="font-bold">The Dry</h4>
+                        <p>Action, Adventure</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="coming-soon">
+            <h1 class="text-3xl my-6">Coming Soon</h1>
+            <div class="movie-container">
+                <div class="movie-box">
+                    <div><img src="../assets/img/home_page_img/visions.png" alt="xfast" width="100%"></div>
+                    <div>
+                        <h4 class="font-bold">Visions</h4>
+                        <p>Action, Suspense</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="movie-box">
+                    <div><img src="../assets/img/home_page_img/lostcity.png" alt="xfast" width="100%"></div>
+                    <div>
+                        <h4 class="font-bold">The Lost City of Z</h4>
+                        <p>Action, Adventure</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="movie-box">
+                    <div><img src="../assets/img/home_page_img/river.png" alt="xfast" width="100%"></div>
+                    <div>
+                        <h4 class="font-bold">River Rain</h4>
+                        <p>Action, Suspense</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- aside right -->
     <aside class="aside-right">
+        <div class="aside-right-top">
+            <input type="text" placeholder="Search">
+            <i class="fa-solid fa-bell"></i>
+
+        </div>
+        <div class="watching">
+            <h4 class="text-xl my-5">Continue Watching</h4>
+            <div class="watching-inner">
+                <div>
+                    <img src="../assets/img/home_page_img/Poster7.png" alt="logo1">
+                    <h4>Spider in the Web</h4>
+                    <p class="text-xs">Action</p>
+                    <p class="text-xs">2023</p>
+                </div>
+                <div>
+                    <img src="../assets/img/home_page_img/Poster8.png" alt="logo2">
+                    <h4>Manikarnika</h4>
+                    <p class="text-xs">Action</p>
+                    <p class="text-xs">2023</p>
+                </div>
+                <div>
+                    <img src="../assets/img/home_page_img/Poster9.png" alt="logo3">
+                    <h4>Saints and Stranggers</h4>
+                    <p class="text-xs">Comedy, Action</p>
+                    <p class="text-xs">2024</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="friends">
+            <h4 class="my-6">Friends Activity</h4>
+            <div class="profile-container">
+                <div class="profile">
+                    <div>
+                        <img src="../assets/img/home_page_img/Frame 51.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Abiola</h4>
+                        <p class="text-xs">is now watching Harry Potter</p>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div>
+                        <img src="../assets/img/home_page_img/Frame 50.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Chika</h4>
+                        <p class="text-xs">is now watching Marry Me</p>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div>
+                        <img src="../assets/img/home_page_img/Frame 49.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Margaret</h4>
+                        <p class="text-xs">is now watching River Rain</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </aside>
 </body>
 
