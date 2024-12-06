@@ -28,9 +28,9 @@
                     <nav>
                         <ul>
                             <li><a href="">Home</a></li>
-                            <li><a href="">Movies</a></li>
-                            <li><a href="">Genre</a></li>
-                            <li><a href="">Trending</a></li>
+                            <li><a href="#Movies">Movies</a></li>
+                            <li><a href="/templates/genre.html">Genre</a></li>
+                            <li><a href="/templates/profile.html">Trending</a></li>
                         </ul>
                     </nav>
                     <div class="login-signup">
@@ -61,19 +61,19 @@
                 <br>
                 <p>Get ready to dive in to the world of visual entertainment for your everyday pleasure...</p>
                 <br>
-                <button class="color-button"><a href="">Get Started</a></button>
+                <button class="color-button"><a href="/templates/signup.html">Get Started</a></button>
             </section>
         </div>
     </div>
 </div>
     <!-- body -->
     <main>
-        <section class="categories">
+        <section class="categories" id="Movies">
             <ul class="categories-title flex-row">
-                <li><a href="">Currently Trending</a></li>
-                <li><a href="">Popular</a></li>
-                <li><a href="">Recently added</a></li>
-                <li><a href="">User of the Month</a></li>
+                <li><a href="/templates/profile.html">Currently Trending</a></li>
+                <li><a href="/templates/profile.html">Popular</a></li>
+                <li><a href="/templates/profile.html">Recently added</a></li>
+                <li><a href="/templates/best_user.html">User of the Month</a></li>
             </ul>
             <br>
             <div class="categories-container flex-row">
@@ -137,7 +137,7 @@
         </section>
         <hr>
         <!-- why choose heaxa -->
-        <section class="choose">
+        <section class="choose" id="About">
             <h1 class="font-bold text-4xl">Why Choose <span class="text-[#aa7a24]">HEXAVIEW?</span> </h1>
             <br>
             <div class="choose-container">
@@ -156,7 +156,7 @@
                     </div>
                     <article>
                         <h2 class="text-3xl font-semibold">Swift Performance</h2>
-                        <p>Swift Performance and instances in our streaming plaform</p>
+                        <p>Swift Performance and instances in our streaming platform</p>
                     </article>
                 </div>
                 <div class="choose-container-innerbox">
@@ -165,7 +165,7 @@
                     </div>
                     <article>
                         <h2 class="text-3xl font-semibold">Data Saver</h2>
-                        <p>Reduce your data usage while streaming with our data featue</p>
+                        <p>Reduce your data usage while streaming with our data feature</p>
                     </article>
                 </div>
                 <div class="choose-container-innerbox">
@@ -227,7 +227,7 @@
         </section>
         <hr>
         <!-- Frequently Asked Questions -->
-        <section class="faq">
+        <section class="faq" id="FAQ">
             <h1 class="font-bold text-4xl">
                 <center>Frequently Asked <span class="text-[#aa7a24]">Questions</span></center>
             </h1>
@@ -246,12 +246,12 @@
                 <div class="faq-innerbox">
                     <h2>Can i watch Hexaview on multiple device?</h2>
                     <br>
-                    <p>Yes you can stream on smartphones , tablets Tvs & Computers</p>
+                    <p>You can subscribe to our monthly subscription plans that is affordable to you.</p>
                 </div>
                 <div class="faq-innerbox">
                     <h2>Is there a free trial for new users?</h2>
                     <br>
-                    <p>Yes, we offer a 7 day free trial for new users</p>
+                    <p>Yes, we offer a 7 day free trial for new users with 100% refund.</p>
                 </div>
             </div>
         </section>
@@ -260,10 +260,10 @@
             <div class="trial-inner">
                 <h2>JOIN NOW AND GET 7 DAYS FREE TRIAL FAM</h2>
                 <br>
-                <button class="color-button"><a href="">Join Now</a></button>
+                <button class="color-button"><a href="/templates/signup.html">Join Now</a></button>
             </div>
             <br>
-            <p>Already have an account? <span class="text-[#aa7a24]">Sign in</span> </p>
+            <p>Already have an account? <a class="text-[#aa7a24]" href="/templates/login.html">Sign in<a/> </p>
         </section>
     </main>
     <hr>
@@ -274,22 +274,22 @@
                 <div class="footer-top-innerbox">
                     <h2 class="font-bold text-2xl">Browse Genres</h2>
                     <ul>
-                        <li><a href="">Drama</a></li>
-                        <li><a href="">Action</a></li>
-                        <li><a href="">Documentary</a></li>
-                        <li><a href="">Honor</a></li>
-                        <li><a href="">Bollywood</a></li>
-                        <li><a href="">Comedy</a></li>
+                        <li><a href="/templates/genre.html">Drama</a></li>
+                        <li><a href="/templates/genre.html">Action</a></li>
+                        <li><a href="/templates/genre.html">Documentary</a></li>
+                        <li><a href="/templates/genre.html">Horror</a></li>
+                        <li><a href="/templates/genre.html">Bollywood</a></li>
+                        <li><a href="/templates/genre.html">Comedy</a></li>
                     </ul>
                 </div>
                 <div class="footer-top-innerbox">
                     <h2 class="font-bold text-2xl">Help</h2>
                     <ul>
-                        <li><a href="">About us</a></li>
-                        <li><a href="">Subscription Plan</a></li>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Honor</a></li>
-                        <li><a href="">Faq Page</a></li>
+                        <li><a href="#About">About us</a></li>
+                        <li><a href="/templates/subscription.html">Subscription Plan</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/templates/genre.html">Genre</a></li>
+                        <li><a href="#FAQ">FAQ Page</a></li>
                     </ul>
                 </div>
                 <div class="footer-top-innerbox">

@@ -29,10 +29,3 @@ form.addEventListener('submit', (event) => {
     }
 })
 
-
-// console.log(findUser('joshniel@gmail.com'))
-
-
-
-// console.log(allEmails)
-// console.log(allUserNames)
