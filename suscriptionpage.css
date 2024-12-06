@@ -1,0 +1,129 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c0c3c;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .pricing-container {
+    text-align: center;
+    max-width: 900px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .highlight {
+    color: #ffc107;
+  }
+  
+  .billing-toggle {
+    margin: 20px 0;
+  }
+  
+  .billing-toggle button {
+    background-color: transparent;
+    border: 1px solid #AA7A24;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 0 10px;
+    color:  #AA7A24;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .billing-toggle .active {
+    background-color:  #AA7A24; 
+    color: white;
+  }
+  
+  .plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .plan {
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .plan h2 {
+    color: #000;
+    font-size: 1.5rem;
+  }
+  
+  .price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .price span {
+    font-size: 1rem;
+    display: block;
+    color: #555;
+  }
+  
+  button.get-started {
+    background-color: white;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button.more-info {
+    background-color: transparent;
+    color: #ffc107;
+    border: 1px solid #ffc107;
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .more-info{
+    border-color: #f8f9fa;
+  }
+  
+  .features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    text-align: left;
+  }
+  
+  .features li {
+    margin-bottom: 10px;
+  }
+  
+  .basic-plan {
+    background-color: #f8f9fa;
+  }
+  
+  .standard-plan {
+    background-color: #AA7A24;
+    color: white;
+  }
+  
+  .premium-plan {
+    background-color: #ffffff;
+  }
+  
