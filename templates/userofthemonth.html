@@ -1,0 +1,262 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/pages/home_page_css/asideleft.css">
+    <link rel="stylesheet" href="/css/pages/home_page_css/asideright.css">
+    <link rel="stylesheet" href="/css/pages/home_page_css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/pages/user.css">
+    <title>Home</title>
+    <style type="text/tailwindcss">
+        .parent>form {
+            @apply border-2 border-[var(--secondary-color)] mx-10 mb-10 pl-8 py-4
+        }
+    </style>
+</head>
+
+<body class="h-[100vh] overflow-hidden">
+    <aside class="aside-left">
+        <div>
+            <h1 class="text-[#aa7a24] text-3xl">Hexaview</h1>
+        </div>
+        <div class="aside-left-inner lg:fixed hidden lg:block">
+            <section class="aside-left-top">
+                <button class="bg-[#dfc865]"><a href="./home.html" class="text-[#aa7a24]">
+                        <i class="fa-solid fa-house text-[#aa7a24]"></i>
+                        Home
+                    </a></button>
+                <ul>
+                    <div>
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <h4>Browse Genres</h4>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-heart"></i>
+                        <a href="./favorite.html"><h4>favorites</h4></a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-download"></i>
+                        <a href="./download.html"><h4>Downloads</h4></a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-user-group"></i>
+                        <a href="./watch_party.html"><h4>Watch Party</h4></a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <a href="./history.html"><h4>History</h4></a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-wifi"></i>
+                        <h4>Wifi</h4>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <a href="./language.html"><h4>Language</h4></a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <a href="./subscription.html"><h4>Subscription</h4></a>
+                    </div>
+                </ul>
+            </section>
+            <section class="aside-left-bottom absolute bottom-0">
+                <ul>
+                    <div>
+                        <i class="fa-solid fa-gear"></i>
+                        <h4>Settings</h4>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <h4 id="logout">Log Out</h4>
+                    </div>
+                </ul>
+            </section>
+        </div>
+    </aside>
+
+    <!-- main -->
+    <main>
+        <div>
+            <h5 class="upp">Indroducing Our User Of The Month </h5> 
+
+        <img class="w-[400px] h-[500px] mt-20" src="user of the month.png" alt="Introducing Our User Of The Month">
+
+        <h4 class=''>Think you can be our next featured user??<br>
+            Keep Watching & engaging our contents.
+        </h4>
+        </div>
+
+        <section class="parent mt-20 flex flex-col">
+            <form class="w-[300px]">
+                <label for="text"> User : Alfred Johnson</label><br>
+                <label for="text">Joined : October,2023</label>
+            </form>
+        
+        
+        
+            <form class="w-[300px]">
+                <label for="text"> Quote : " I enjoyed diving new <br> movies and exploring <br> new genres". </label>
+            </form>
+        
+       
+        
+            <form class="w-[300px]">
+                <label for="text"> Most watched shows : Drama <br> Classic , Action thrillers. </label>
+            </form>
+
+            <form class="w-[300px] rounded-lg bg-[var(--secondary-color)] text-white font-bold"">
+                <label for="text">Reward : 5% off his next subscription</label>
+            </form>
+        </section>
+        
+    </main>
+    
+
+    <!-- aside right -->
+    <aside class="aside-right lg:overflow-y-auto h-[100vh]">
+        <div class="aside-right-top">
+            <input type="text" placeholder="Search">
+            <i class="fa-solid fa-bell"></i>
+
+        </div>
+        <div class="watching">
+            <h4 class="text-xl my-5">Continue Watching</h4>
+            <div class="watching-inner">
+                <div>
+                    <img src="/assets/images/home_page_img/image1.png" alt="logo1">
+                    <h4>Spider in the Web</h4>
+                    <p class="text-xs">Action</p>
+                    <p class="text-xs">2023</p>
+                </div>
+                <div>
+                    <img src="/assets/images/home_page_img/image2.png" alt="logo2">
+                    <h4>Manikarnika</h4>
+                    <p class="text-xs">Action</p>
+                    <p class="text-xs">2023</p>
+                </div>
+                <div>
+                    <img src="/assets/images/home_page_img/image3.png" alt="logo3">
+                    <h4>Saints and Stranggers</h4>
+                    <p class="text-xs">Comedy, Action</p>
+                    <p class="text-xs">2024</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="friends">
+            <h4 class="my-6">Friends Activity</h4>
+            <div class="profile-container [&>div>div>img]:w-20 [&>div>div>img]:h-20 [&>div>div>img]:mr-4">
+                <div class="profile">
+                    <div>
+                        <img src="/assets/images/watch_img/Frame 49.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Abiola</h4>
+                        <p class="text-xs">is now watching Harry Potter</p>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div>
+                        <img src="/assets/images/watch_img/Frame 50.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Chika</h4>
+                        <p class="text-xs">is now watching Marry Me</p>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div>
+                        <img src="/assets/images/watch_img/Frame 51.png" alt="">
+                    </div>
+                    <div>
+                        <h4>Margaret</h4>
+                        <p class="text-xs">is now watching River Rain</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Hexaview</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Hexaview</a>
+    </header>
+    <main>
+        <ul>
+            <nav>
+                <a class="home3"href="#"><img class="home2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAApZJREFUaEPtl0trE2EUht8zKRUVVwpuMglSQVFBhGZSxC4qSv+AF9BMKuhO1125F3Hjwm4EwTZRkPoHvNAsFDGTghsVKopkJi66cJmNpHMkEqGkmcv3zUlKYLI+l/c558y8GcKY/2jM9SMF2O0NDm0D9Yo5S8yPiYgZxi3Lbn4YBuxQABrL+TNs+O8A7O+JbpNvzBYWmp+kIcQB1p+aU34GdQAH+8T+NrZQnL7h/ZCEEAX4+PzIYWOr4wDIBYh0/cyENXPt56YUhBjA+yeHDkxO7u3e+akIcZ/38J+Z0+XNtgSECECthol9LbNGwLl4onitnW3Nz82hEy8+OCoxADNo/Vn2BTNdVhFDxKvT11tXicAqef2xiQGcqvkIjNtaIghLVsm7o5XbS0oEUF/JLhLR/WQCeLFgtx7o1tAGcKrZEpgquo235zHTlWLZXdWppQVQX8mfJ/JfA8joNB2Q02E25ovl5ppqPWWAAS6r2jMoXsutlQBCXFYKQtmtYwPEcFkpCCW3jgWg4LJSELHdOhJA3WWlGOK5dSiArstKIcRx61CARC4rRhHu1oEAEi4rxxDs1gMBJF1WCiLIrXcANJZzF9jgN1KNJeuQTxcLC+7b7TV3ADgVsxnyRSWpR6MWbVi2ezwK4DuAKY3qo0j5ZtnesQiA/FnAfwigMApFCj1+MeNmsey9CgUIKuhUzERfTgpC/4Vathdpst24WEHdwBRAcQXpBvoHlp7QuJxQ1O3G3WRUnf/zEH8LRTVOAfpOMd1A/7OZnlBvIlGDSB/ioNd61OR28y30BcCJCD/6atneybAYp2KK1FE+oUY1d8lnvkfA0cECaYMIdwsl92UYgFQdZQDFfwIjC4/tAyNTpNgoBVAcmHj4X+lONUBjavMoAAAAAElFTkSuQmCC"/> Home</a>
+                <div class="features">
+                    <a href="#" style="color: var(--white);"><img class="genres" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABDZJREFUaEPtmTmoXlUUhb+lqOAAWigOiCBYaGHhADYWVoqlIyRENCk0GjQhoCEmUUKcBxyiRsUBp0JwKGwU0dYiWKhoIVg4ERwCKjESh+1dcn65/t57z7nDUwL/gde8d+46e+2zh7XPE/v50n5uPwsC//cNLm5gcQMjPdA7hCLiGOBpYA9wnaTvxthQw/sZuLYvXi8CEbEKuBc4Mhn9PbBW0gtDSETESuC+Gt5uYJ2k50rxighExEnA88C5LcBvAaskfVlycMJ7BjivZf+7wBUleJ0EIsJ/XwtsAw7NGPcTcBOwQ1I07U14NyS8wwrwNgCPteH5+1YCEXEq4Ks8q8SrtT3vAcslfVb/LiJOAV6aCm+G/S8CEXEQsDH9HNzT+Nn2X4BbUr4cCNiTm4AxeLcC90j6o25TE4GXgUsHGj7/2aMpQZdNhPe4pGtyBOyxddUmM87FaZtdPyaPb09h6jzaOgLP+bUZeDh7AzOLIuJE4Eng/J7eewVYU3lq11wOHJ/6R1+811O/+brJjmwZjYhLgAcBG9C1fMBKSW92bYqIi4CHKuecMAVeloAPiYjDgTuB1VUoHDB38G9VnD/gpJXkbppdCe92e7YB7/dEcFMJXhGBWlidkRraael37wMrJH2ctbphQ0QYzw3t9BreVZI+KMXrRaBG5DZgtyTLgNErIpzgeyTd1ResN4GIuDhdsc/KxnzOoFpO2JbeeMUEIqKtijRWnQLD2/BeS6r0H1WsDS9LICJK+oLr/s3AI126JRUE41kPdfUF13137u3zdX+eSE7MzSdtzrGdSZ2S1qp2VgRyeE5mF4nWpG4kkCmbuUNdBl1Wt8zKYMK7w6HRUDZL8Nw3Gstqkxa6LDWuY3PImb9/AVi3uIeY0HEj8TxrrJb0Rh2nicDl1hxVPB898sBvXFXSHGFN5FF0zDLe1ZIsLf5ebSF0VCKxfOCJTwHrJf2QEtd4liMrBuI9m0bXv/CyBGYbIuKC1ClLw+lzwJ30nWT4jdVcsU+SQ8iSxELO5HI6aGbCV8CVkt4eU0aPqMLgbl9fxwTnIcOJtlHS3i6JEBGW6MazrmqrgsZz2BnPrx+tK9sHardxDvBiNWaePIf2SRrAd9aqzZqWE++3rnd1iog2vE+BZZJ2loRbMYEUAoekgdwDj73k0rhN0q81iVEsuyPCeG5o6x1hgLXQVkn7Soz3nl4EardxdvUCsVfSR2nw2QFcWHpo2vdqGlR2RcSZKVc+7IkxjEC6jRKJkbPHksESxJKh8SkmBzDoBhIBizhPV1MsvyU5qXuvMQT8/OKHLA/bkz+XlDIZTKCWD0vyYPWfEUjhZEf0eTLsfIIsNX5wFWo7YOpH4BIio0Oo6ZCpn+G7iCwJgRRW1k9PpH+EXC/p2xKP9t2zZAT6GjJ0/4LAUM9N9d3iBqby5FCcxQ0M9dxU3/0JR8t7QO/6adsAAAAASUVORK5CYII="/>Browser Genres</a><br>
+                    <a href="#" style="color: var(--white);"><img class="favorites" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAw9JREFUaEPtmUuojVEUx39/j1LkFYMbEyS6MsAAKSbXQDe6txDyzqMoAxPMyECGlJDyShIDUkYYyCMTJkLdATfFRCF55bV8u86tc8895+zvO9865zp19vB83/6v9Vtr7bP32p9o8qEm958WwGBnsJWBpsqAmY0CVgBrgenAJOBX8ttT4DnwDLgjqbccmJlNATqA2cAsYA4wHHgL9ABXgJuSvqQNTKoSMrPxwD5gNzAyIv4dOAAcl2ThXTMbAuwFDgMjIvO/AieAo5I+xECiAGa2BLgOjIuJlTx/WMjU0EJk52ec/xHolnSv2ryqAGa2AbiY0XDx66EUhqWIejUTmyRV9KEigJnNBR4XajQHQ+6pYY0tlPSknFJZADMbXViUk3Ob9xF4A7RLCuuj36gEcATY72PbTeWgpENRADObkPzbvHcz6yf0DWiT9LlYckAGzGwLcNbPrqvSaknXYgDhhZWuZv3EzknaGgMIO2q7n01XpUeSFsUAwgYy1tWsn9jrZE+YGgP4BIzxs+mq9ErStBjAy2Trn+lq1k/svqTFMYBw7unys+mqdFLSrhjATuCUq1k/sQ5Jd2MAbcA7P5tuSr2SQj/Rb1Q6ShwD9riZ9hHaIelMWoBwnHiRNBYTfWznVumRNKOcSrXj9IKk/XuQdFGhIRnM8QOYJykEdMCINTTbkr53QNoaTLM5qf0LlWymaSm3J6fA09DwS7DQTwfnq3aEUYBAbmYbgfMNhEjlfPAtFUCDIVI7nwmgQRDB+XWSwv1QqpE6A31qZrYGuJwle6k8gczOZ85AHSH+AOuzRL7Pl8wZKIG45LBPBOdXSQqHyMyjZoDCmuhO7jhDC1rrZpfL+ZpLqDhMZlYrxO/kuBKa9Join7uEckIE57sk3cpcMyUTcpVQGYirhbvQan65Oe9SQiUQncCNKhDhnjPcOOeOvGsJpYQIzncm1yK385ZN8Xy3EioDERZn+PoSRl2cdy+hEoilQCiVv8By78jXrYRKIJYBP0sb8f++hDwdjGnVZQ3EjHo+bwF4RrMWrabPwD/A/OUxxt7z0gAAAABJRU5ErkJggg=="/>Favorites</a><br>
+                    <a href="#" style="color: var(--white);"><img class="downloads" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAYdJREFUaEPtmctJRFEMhv+4c28JFqFbOxDsQ61E7UOwA7dahCW4d2fklwjDgJ48zr2XkWQ3kJPky3OYERy4yIHHjwbYuoJdgX9TAVXVCIyITKn+FCMMvAEi5dvR7Qr8JKNbqFsomYFuoWLiegt1C63VQqp6D+C66M/7/EFEbjzK7hlQ1SMAjwAuPYYLOk8ArkTk02PDDWBf2I4BPAM48xhP6LwCuBCRD+/bEIBBnAB4AXDqdeLUewNwLiLvTv1vtTCAQTB4QhBmhjBoBk+IkKQADIJtxHZiW1WE7cK2YfuEJQ1gEBxoDjYHPCMcVA4sBzclJQCD4Lq7S3kHbkWE6zktZQCDyNwI967/i24WQPRGhHb94gBWBe+NCO/6VQAMYnQjUrt+NQCD+O1GpHf9qgAGsX8jSrt+dYC9G8GPpV2/CcDOjUB1128GkL5OgYdT7kDA33TVBpie0qDBYQWiv3kG/Q/VR/8jNMAwhUWFrkAxgYs/H87A4hEUHTRAMYHl512BcgqLBr4AbIKaMadcz9MAAAAASUVORK5CYII="/>Downloads</a><br>
+                     <a href="#" style="color: var(--white);"><img class="watch" src="two people.png" alt="Watch">Watch Party</a><br>
+                    <a href="#" style="color: var(--white);"><img class="languages" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABDZJREFUaEPtmTmoXlUUhb+lqOAAWigOiCBYaGHhADYWVoqlIyRENCk0GjQhoCEmUUKcBxyiRsUBp0JwKGwU0dYiWKhoIVg4ERwCKjESh+1dcn65/t57z7nDUwL/gde8d+46e+2zh7XPE/v50n5uPwsC//cNLm5gcQMjPdA7hCLiGOBpYA9wnaTvxthQw/sZuLYvXi8CEbEKuBc4Mhn9PbBW0gtDSETESuC+Gt5uYJ2k50rxighExEnA88C5LcBvAaskfVlycMJ7BjivZf+7wBUleJ0EIsJ/XwtsAw7NGPcTcBOwQ1I07U14NyS8wwrwNgCPteH5+1YCEXEq4Ks8q8SrtT3vAcslfVb/LiJOAV6aCm+G/S8CEXEQsDH9HNzT+Nn2X4BbUr4cCNiTm4AxeLcC90j6o25TE4GXgUsHGj7/2aMpQZdNhPe4pGtyBOyxddUmM87FaZtdPyaPb09h6jzaOgLP+bUZeDh7AzOLIuJE4Eng/J7eewVYU3lq11wOHJ/6R1+811O/+brJjmwZjYhLgAcBG9C1fMBKSW92bYqIi4CHKuecMAVeloAPiYjDgTuB1VUoHDB38G9VnD/gpJXkbppdCe92e7YB7/dEcFMJXhGBWlidkRraael37wMrJH2ctbphQ0QYzw3t9BreVZI+KMXrRaBG5DZgtyTLgNErIpzgeyTd1ResN4GIuDhdsc/KxnzOoFpO2JbeeMUEIqKtijRWnQLD2/BeS6r0H1WsDS9LICJK+oLr/s3AI126JRUE41kPdfUF13137u3zdX+eSE7MzSdtzrGdSZ2S1qp2VgRyeE5mF4nWpG4kkCmbuUNdBl1Wt8zKYMK7w6HRUDZL8Nw3Gstqkxa6LDWuY3PImb9/AVi3uIeY0HEj8TxrrJb0Rh2nicDl1hxVPB898sBvXFXSHGFN5FF0zDLe1ZIsLf5ebSF0VCKxfOCJTwHrJf2QEtd4liMrBuI9m0bXv/CyBGYbIuKC1ClLw+lzwJ30nWT4jdVcsU+SQ8iSxELO5HI6aGbCV8CVkt4eU0aPqMLgbl9fxwTnIcOJtlHS3i6JEBGW6MazrmqrgsZz2BnPrx+tK9sHardxDvBiNWaePIf2SRrAd9aqzZqWE++3rnd1iog2vE+BZZJ2loRbMYEUAoekgdwDj73k0rhN0q81iVEsuyPCeG5o6x1hgLXQVkn7Soz3nl4EardxdvUCsVfSR2nw2QFcWHpo2vdqGlR2RcSZKVc+7IkxjEC6jRKJkbPHksESxJKh8SkmBzDoBhIBizhPV1MsvyU5qXuvMQT8/OKHLA/bkz+XlDIZTKCWD0vyYPWfEUjhZEf0eTLsfIIsNX5wFWo7YOpH4BIio0Oo6ZCpn+G7iCwJgRRW1k9PpH+EXC/p2xKP9t2zZAT6GjJ0/4LAUM9N9d3iBqby5FCcxQ0M9dxU3/0JR8t7QO/6adsAAAAASUVORK5CYII="/>Languages</a><br>
+                    <a href="#" style="color: var(--white);"><img class="sub" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAhRJREFUaEPtmT1LHFEUhp+3SZogBElIjB9tihQpLQIGEn+FgoWiNvoDAqlC6jSCwQRJ4c8wVZLaxiK9HyCiVfojF65yd9ywd3bO7szA3HJ558z73HPm7Jk7ouVLLfdPB1B3BrsMNDIDZvYM+A7MA5M1m7wC/gBrki6LXu6VUDR/BASIJq0T4LWk69RUP4ADYKlJzhMve5I2BgGcA88bCnAiaXYQgPUIJJnZIfAu+f0f8FLSWar11oXYZnbPzzAAL4C/wKPk4p+S3hcAXHVuADFQqL2vhdLakLRXgPDWVc/ArUHvEsmJ51JCCcAccJxRSm46V4BYSpvAbqGU1iV9K5SSi84dIEL8At5kdKXKulEBuJVI3JD/xqsM0LQ/NEk900O/UaKnbXUAzjvQZcB5Q0uH6zKQsWWLwBfgVYa2tGTkGQg3MLPQ3ZaBT0Do8W5rLADJ7PQA2AY+AI89KMYKkIAE8wFiC3hYBaQWgARkBvgcy2uoM6laARKQ8IDvAAtls9EkgNCpel5Jc2BqBTCzdpaQmU0AH1v3EJtZO9toq//IgLexw7RzlMjpJFU0I+9CVczlXJsDEM47p3KC1aA5kzSd3rffO/EPYKUGczm33Je0OgjgSTx9e5oTcYya0/iBI3yxuVt9ByozCyV0+4nJZQyuABoM/wbCQfJFMc5QE2EFM+6XdgDuW1oyYJeBkhvmLm99Bm4AJMBpQCSu9mQAAAAASUVORK5CYII="/>Subscription</a><br>
+                </div>
+                 
+                
+            </nav>
+        </ul>
+            
+
+        
+    </main>
+
+
+    <footer class="footer">
+        <a href="#" style="color: var(--white);"><img class="settings" src="data:image/png;base64,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"/>Settings</a><br>
+        <a href="#" style="color: var(--white);"><img class="exit" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAZxJREFUaEPtmU1KBDEQhd/zCioO6hXEneA13A8ICgreSEXBq4gwS8ErOIjgz95NaYHC0KQzFUN10kOybNKp+qpepSsdYuSDI/cfDaB0BlsGqs6AiEwAXAE4BLA+sLOfAO4BnJN86bPdKyER2QLwCEAhSo5nAPskP0JOxADuAExLer5g+/InC2epAHMA25UAzEnupgJI54U1kt1nbnwiYrIfk5BpAS+CBmCNQMtATwSsAWw10CchEdEv+AXJr//IrHgGfh2YATiKtQKRAJh2QbdudCGC2scohMKYR3YGzJZsRagyUjldW9etDeDPbwUw1UWtAApiqotsgMAC1uxb5i2ti9oBFDJaFw1g9BKyCDk2JxKAYYrYCWC02+ioP2RLt8xQtj12oaQzcfFmzhqBlW2nHTaBoALaiSw30m4HmtwayAWz2m8Syo20p4T0t/aOl4OJ676R3Ay9E5PQLYDjRENe029InqQCbAB4quCCQ1uRPZLvSQA6WUT0fkA7yINCV0wPAE5Jvval1u2/kJeWuus2gKEi3SRUOtIrm4FvcFtoQEWDNwYAAAAASUVORK5CYII="/>Log Out</a>
+    </footer>
+    
+</body>
+</html> -->
