@@ -1,0 +1,21 @@
+@import url(../base/base.css);
+
+
+body{
+    background-color: var(--background-color);
+    font-family: 'Poppins-Regular';
+    color: var(--white);
+}
+
+.genre{
+    background-color: rgb(123, 134, 145);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+
+}
+h2{
+    text-align: center;
+}
