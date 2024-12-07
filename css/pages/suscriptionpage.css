@@ -19,17 +19,16 @@ body {
       display: flex;
       justify-content: space-between;
 
-      p {
-        font-size: 1.5rem;
-        font-family: 'Poppins-Regular';
-        font-weight: light;
-        /* border: 2px solid white; */
-        margin-top: 60px;
-        color: var(--white);
-      }
     }
   }
-  
+  .pricing-container>.flex  p {
+    font-size: 1.5rem;
+    font-family: 'Poppins-Regular';
+    font-weight: light;
+    /* border: 2px solid white; */
+    margin-top: 60px;
+    color: var(--white);
+  }  
   
   h1 {
     font-size: 3rem;
@@ -50,7 +49,7 @@ body {
     border: 1px solid var(--secondary-color);
     padding: 10px 20px;
     font-size: 1.1rem;
-    margin: 0 10px;
+    margin: 10px 10px;
     color:  var(--secondary-color);
     cursor: pointer;
     border-radius: 10px;
@@ -74,7 +73,7 @@ body {
     color: #000;
     border-radius: 10px;
     padding: 60px 30px;
-    width: min(350px, 80%);
+    width: 350px;
 
   }
   
@@ -198,7 +197,27 @@ body {
     flex-wrap: wrap;
   }
   .pricing-container h1 {
-    font-size: 30px;
+    font-size: 1.5rem;
     line-height: 30px;
+  }
+  .pricing-container>.flex p {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .plan {
+    width: 100%;
+  }
+  .plans {
+    justify-content: space-around;
+    gap: 10px;
+    /* flex-direction: column; */
+  }
+  .pricing-container>.flex {
+    flex-direction: column;
+  }
+  .pricing-container>.flex p{
+    font-size: 0.8rem;
   }
 }

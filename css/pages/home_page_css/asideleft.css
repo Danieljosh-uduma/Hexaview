@@ -1,0 +1,42 @@
+.aside-left{
+    padding: 1vw;   
+}
+.aside-left-inner{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+}
+.aside-left-top{
+    padding: 5px;
+    button{
+        margin: 30px 0;
+    }
+    ul{
+        display: flex;
+        flex-flow: column wrap;
+        gap: 15px 0;
+        div{
+            display: flex;
+            gap:0 1vw;
+        }
+    }
+}
+.aside-left-bottom{
+    padding: 5px;
+    ul{
+        display: flex;
+        flex-flow: column wrap;
+        gap: 15px 0;
+        div{
+            display: flex;
+            gap:0 1vw;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .aside-left {
+        margin: auto;
+    }
+}

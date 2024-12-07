@@ -1,4 +1,5 @@
 // Registion functionality - code refactoring
+import { activeUser } from "./profile.js";
 
 export class User {
     constructor (userName, email, password, phoneNumber) {
@@ -24,12 +25,19 @@ export class User {
             return this.logIn;    
         }
     }
-
-    logout() {
-        this.login = fasle;
+}
+export function logout() {
+    let user = activeUser();
+    if (user == 1) {
+        location.href = '/login.html'
+    }
+    else {
+        user.login = false;
+        localStorage.setItem(user.userName, user);
         location.href = '/login.html'
     }
 }
+
 
 // messages
 export let messages = [
