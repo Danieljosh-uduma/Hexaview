@@ -2,7 +2,7 @@ import { allUsers, allUserNames } from './utils.js';
 
 let username = document.getElementById('username');
 
-export let activeUser = () => {
+let activeUser = () => {
     for (let i = 0; i < allUserNames.length; i++) {
         if (allUsers[allUserNames[i]] != 'INFO' && allUsers[allUserNames[i]] != 'return'){
             let user = JSON.parse(allUsers[allUserNames[i]]);
