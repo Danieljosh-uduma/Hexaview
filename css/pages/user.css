@@ -1,0 +1,129 @@
+@import url('../base/base.css');
+
+
+body{
+    background-color: var(--background-color);
+    font-family: 'Poppins-Regular';
+    color: var(--white);
+}
+
+main{
+    display: flex;
+   
+}
+.logo{
+    margin-left: 10px;
+    color: var(--secondary-color);
+    width: 200px;
+    height: auto;
+    font-size: large;
+}
+.upp{
+    margin-right: -250px;
+
+}
+.pic{
+    width: 260px;
+    margin-top: 35px;
+    margin-left: 30px;
+}
+.home3{
+    width: 300px;
+    margin-left: 45px;
+    background-color:var(--primary-color);
+    border-radius: 5px;
+    height: 900px;
+    border: var(--primary-color);
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 100px;
+    color: var(--secondary-color);
+    
+}
+.home2{
+    width: 20px;
+    margin-bottom: -4px;
+    margin-top: 100px;
+}
+.genres{
+    width: 20px;
+    margin-bottom: -4px;
+}
+.favorites{
+    width: 20px;
+    margin-bottom: -4px;
+}
+.downloads{
+    width: 20px;
+    margin-bottom: -4px;
+}
+.watch{
+    width: 20px;
+    margin-bottom: -4px;
+}
+.languages{
+    width: 20px;
+    margin-bottom: -4px;
+}
+.sub{
+    width: 20px;
+    margin-bottom: -4px;
+}
+.settings{
+    width: 20px;
+    margin-bottom: -4px;
+}
+.exit{
+    width: 20px;
+    margin-bottom: -4px;
+}
+.down{
+    position: absolute;
+    bottom: 200px;
+    left: 210px;
+}
+.features{
+    margin-right: 30px;
+    text-decoration: none;
+    left: 200px;
+    margin-left: 40px;
+    color: var(--white);
+    margin-top: 40px;
+}
+.detail{
+  margin-left: 200px; 
+  margin-top: 90px; 
+  border: 1px solid;
+  border-color: var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+    height: 90px;
+    
+    
+}
+.detail2{
+    margin-top: 220px;
+    margin-left: -215px;
+    border: 1px solid;
+    border-color: var(--secondary-color);
+    padding: 20px;
+    height: 100px;
+}
+.detail3{
+    margin-top: 360px;
+    margin-left: -270px;
+    border: 1px solid;
+    border-color: var(--secondary-color);
+    padding: 20px;
+    height: 90px;
+}
+footer{
+    margin-left: 45px ;
+    margin-bottom: 80px;
+}
+.footer{
+    top: 70px;
+}
+p{
+    margin-left: 900px;
+}
