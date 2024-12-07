@@ -1,5 +1,5 @@
 // Registion functionality - code refactoring
-import { activeUser } from "./profile.js";
+// import { activeUser } from "./profile.js";
 
 export class User {
     constructor (userName, email, password, phoneNumber) {
