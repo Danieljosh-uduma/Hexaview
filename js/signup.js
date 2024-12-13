@@ -24,7 +24,7 @@ form.addEventListener('submit', (event) => {
             user.login = true;
             
             localStorage.setItem(user.userName, JSON.stringify(user));
-            location.href = './profile.html'
+            location.href = './subscription.html'
         }
     }
 })

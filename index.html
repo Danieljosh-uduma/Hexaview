@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/css/pages/landing_page_css/banner.css">
     <link rel="stylesheet" href="/css/pages/landing_page_css/style.css">
     <link rel="stylesheet" href="/css/pages/landing_page_css/links.css">
+    <link rel="stylesheet" href="/css/base/base.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -29,8 +30,8 @@
                         <ul>
                             <li><a href="">Home</a></li>
                             <li><a href="#Movies">Movies</a></li>
-                            <li><a href="/templates/genre.html">Genre</a></li>
-                            <li><a href="/templates/profile.html">Trending</a></li>
+                            <li><a href="/templates/genres.html">Genre</a></li>
+                            <li><a href="/templates/home.html">Trending</a></li>
                         </ul>
                     </nav>
                     <div class="login-signup">
@@ -53,7 +54,7 @@
         <!-- hero -->
         <div class="hero">
             <section>
-                <input type="text" placeholder="Search for anything">
+                <input class="text-gray-400" type="text" placeholder="Search for anything">
             </section>
             <br>
             <section>
@@ -70,10 +71,10 @@
     <main>
         <section class="categories" id="Movies">
             <ul class="categories-title flex-row">
-                <li><a href="/templates/profile.html">Currently Trending</a></li>
-                <li><a href="/templates/profile.html">Popular</a></li>
-                <li><a href="/templates/profile.html">Recently added</a></li>
-                <li><a href="/templates/best_user.html">User of the Month</a></li>
+                <li><a href="/templates/home.html">Currently Trending</a></li>
+                <li><a href="/templates/home.html">Popular</a></li>
+                <li><a href="/templates/home.html">Recently added</a></li>
+                <li><a href="/templates/userofthemonth.html">User of the Month</a></li>
             </ul>
             <br>
             <div class="categories-container flex-row">
@@ -256,9 +257,12 @@
             </div>
         </section>
         <hr>
-        <section class="trial">
+        <section class="trial w-auto mx-auto text-center">
             <div class="trial-inner">
-                <h2>JOIN NOW AND GET 7 DAYS FREE TRIAL FAM</h2>
+                <h2 class="text-2xl font-['Poppins-semibold']">JOIN NOW AND GET 7 DAYS FREE TRIAL FAM</h2>
+                <br>
+                <p class="text-lg font-['Poppins-regular']">With Hexaview, You get a 7 day free trial to see how awesome 
+                    <br> our services are.</p>
                 <br>
                 <button class="color-button"><a href="/templates/signup.html">Join Now</a></button>
             </div>
@@ -274,12 +278,12 @@
                 <div class="footer-top-innerbox">
                     <h2 class="font-bold text-2xl">Browse Genres</h2>
                     <ul>
-                        <li><a href="/templates/genre.html">Drama</a></li>
-                        <li><a href="/templates/genre.html">Action</a></li>
-                        <li><a href="/templates/genre.html">Documentary</a></li>
-                        <li><a href="/templates/genre.html">Horror</a></li>
-                        <li><a href="/templates/genre.html">Bollywood</a></li>
-                        <li><a href="/templates/genre.html">Comedy</a></li>
+                        <li><a href="/templates/genres.html">Drama</a></li>
+                        <li><a href="/templates/genres.html">Action</a></li>
+                        <li><a href="/templates/genres.html">Documentary</a></li>
+                        <li><a href="/templates/genres.html">Horror</a></li>
+                        <li><a href="/templates/genres.html">Bollywood</a></li>
+                        <li><a href="/templates/genres.html">Comedy</a></li>
                     </ul>
                 </div>
                 <div class="footer-top-innerbox">
@@ -288,7 +292,7 @@
                         <li><a href="#About">About us</a></li>
                         <li><a href="/templates/subscription.html">Subscription Plan</a></li>
                         <li><a href="/">Home</a></li>
-                        <li><a href="/templates/genre.html">Genre</a></li>
+                        <li><a href="/templates/genres.html">Genre</a></li>
                         <li><a href="#FAQ">FAQ Page</a></li>
                     </ul>
                 </div>

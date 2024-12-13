@@ -1,0 +1,146 @@
+/* /watch party/ */
+@import url("/css/base/base.css");
+.container{
+    display:flex;
+justify-content: space-between;
+height: 100vh;
+width: 100%;
+
+}
+body{
+    background-color:  #0F1138;  
+}
+
+/* /for section 1/ */
+.leftsiderbar{
+    padding: 15px;
+    color: white;
+    border-right: 1px  solid white;
+    border-bottom:1px solid  #fff;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
+
+}
+.leftsiderbar h1{
+    color:  #AA7A24;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+
+}
+.links div a{
+    color: #fff;
+
+}
+.bottom a{
+    color: #fff;
+}
+#mybutton{
+    background-color:#DFC865;;
+    border: 1px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+/* /for section 2/ */
+.centerbar{
+    color: #fff;
+}
+
+.video-player {
+    width: auto;
+    height: auto;
+    /* margin-top: 10px; */
+   border-radius: 10px ;
+}
+video{
+    border-radius: 10px;
+}
+video controls poster{
+    border-radius: 10px;
+}
+
+/* /for section 3/ */
+.rightsidebar{
+    color:#fff
+}
+.imageright{
+    width: 150px;
+    height:100px;
+    margin-bottom:50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    
+}
+.image-right{
+    width: 190px;
+    height:130px;
+    border-radius:20px ;
+    padding: 10px;
+    margin-bottom: 50px;
+    display: flex;
+}
+.profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    overflow: hidden;
+
+}
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+
+    
+}
+
+.profile-container{
+    display: flex;
+    padding: 30px;
+    gap: 7px;
+}
+
+/* #chat-messages {
+    list-style: none ;
+    width: 40%;
+    height: 20px;
+    background-color: #f5f5f5;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+} */
+
+
+#chat-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/* #send-chat-btn {
+    background-color:  white;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px; */
+
+/* #send-chat-btn:hover{
+    background-color: #3e8e41;
+} */
