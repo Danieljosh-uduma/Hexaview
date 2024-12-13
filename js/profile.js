@@ -23,7 +23,7 @@ const addProfile = document.getElementById('add-user')
 console.log(userProfiles)
 userProfiles.forEach(element => {
     element.addEventListener('click', () => {
-        location.href = './subscription.html'
+        location.href = './home.html'
     })
 });
 

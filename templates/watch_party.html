@@ -1,63 +1,107 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            display: flex;
-            height: 100vh;
-        }
-        .sect1 {
-            background-color: gray;
-            position: relative;
-            width: 15%;
-            list-style-type: none;
-
-            h1 {
-                color: white;
-                font-size: 35px;
-                padding: 15px;
-            }
-            nav {
-                margin: 60px 10px;
-            }
-            nav a {
-                color: white;
-                text-decoration: none;
-            }
-            .nav {
-                position: absolute;
-                bottom: 20px;
-                left: 20px;
-            }
-        }
-        .sect2 {
-            background-color: blue;
-            width: 70%;
-        }
-        .sect3 {
-            background-color: green;
-            width: 15%;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/pages/home_page_css/asideleft.css">
+    <link rel="stylesheet" href="/css/pages/home_page_css/asideright.css">
+    <link rel="stylesheet" href="/css/pages/home_page_css/style.css">
+    <link rel="stylesheet" href="/css/base/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Watch party | Hexaview</title>
 </head>
-<body>
-    <section class="sect1">
-        <h1>hexaview</h1>
-        <a href="">watch party</a>
-        <nav>
-            <li><a href="">Contiue watching</a></li>
-            <li><a href="">Favourite</a></li>
-            <li><a href="">Download</a></li>
-        </nav>
-        <nav class="nav">
-            <li><a href="">profile</a></li>
-            <li><a href="">Log out</a></li>
-        </nav>
-    </section>
-    <section class="sect2"></section>
-    <section class="sect3"></section>
+
+<body class="font-['Poppins-regular']">
+    <aside class="aside-left">
+        <div>
+            <h1 class="text-[#aa7a24] text-3xl">Hexaview</h1>
+        </div>
+        <div class="aside-left-inner lg:fixed hidden lg:block">
+            <section class="aside-left-top">
+                <button class="bg-[#dfc865]"><a href="" class="text-[#aa7a24]">
+                        watch party
+                    </a></button>
+                <ul>
+                    <div>
+                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                        <a href="./watch_party.html"><h4>Continue watching</h4></a>
+                    </div>
+                    <!--  -->
+                    <div>
+                        <i class="fa-regular fa-heart"></i>
+                        <a href="./favorite.html"><h4>Favorites</h4></a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-download"></i>
+                        <a href="./download.html"><h4>Downloads</h4></a>
+                    </div>
+                </ul>
+            </section>
+            <section class="aside-left-bottom absolute bottom-0">
+                <ul>
+                    <div>
+                        <i class="fa-solid fa-gear"></i>
+                        <h4>Settings</h4>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <h4 id="logout">Log Out</h4>
+                    </div>
+                </ul>
+            </section>
+        </div>
+    </aside>
+
+    <!-- main -->
+    <main>
+        <section class="centerbar">
+            <div class="w-[50%] mx-auto mb-20">
+                <h2 class="font-['Poppins-semibold'] text-3xl">HEXAVIEW WATCH PARTY</h2>
+             <h4 class="text-sm">watch hexaview with friends</h4>
+            </div>
+           
+                <div class="video-player">
+                    <span class="text-2xl">Avenger: End Game</span>
+                    <video class="w-[80%] h-[400px] mx-auto rounded-xl" controls>
+                        <source class="w-[100%] h-[100%] rounded-xl" src="/assets/video/Captain America _Avengers Assemble_ Scene - Portal Scene - Avengers _ Endgame (2019) Scene.mp4" type="video/mp4">
+                    </video>
+                   
+                </div>
+         </section>
+        
+                
+            
+    </main>
+
+    <!-- aside right -->
+    <aside class="aside-right lg:h-[100vh] overflow-y-auto">
+        <div class="mt-20 flex lg:flex-col gap-6">
+            <h1><img src="../assets/images/watch1.png" class="imageright"></h1>
+            <h1><img src="../assets/images/watch2.png" class="image-right"></h1>
+        </div>
+     <div class="profile-container  mt-10">
+        <div class="flex gap-2 text-sm items-center">
+        <img class="w-10 h-10" src="../assets/images/watch4.png">
+        <span class="Sophie James">Sophie James</span>
+        </div>
+     </div>
+
+     <div class="profile-container  mt-10 mb-10">
+        <div class="flex gap-2 text-sm items-center">
+        <img class="w-10 h-10" src="../assets/images/watch3.png">
+        <span class="Sophie James">Sophie James</span>
+        </div>
+     </div>
+
+
+        <div class="w-full">
+            <form action="" class="w-full">
+                <input type="text" name="message" id="message" placeholder="Amazing" class="w-full h-8 rounded-xl">
+            </form>
+        </div>
+        
+          
+    </aside>
 </body>
 </html>
